@@ -1,0 +1,11 @@
+
+meta:
+environment: python
+toolchain:
+name: pip
+version: 3.10
+build:
+requirementsPath: requirements.txt
+run:
+scriptName: amvera_telegram_to_quadrant.py
+persistenceMount: /data
