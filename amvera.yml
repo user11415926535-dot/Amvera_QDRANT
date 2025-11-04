@@ -1,11 +1,14 @@
-
+---
+version: null
 meta:
-environment: python
-toolchain:
-name: pip
-version: 3.10
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.11
 build:
-requirementsPath: requirements.txt
+  requirementsPath: requirements.txt
+  useCache: true
 run:
-scriptName: amvera_telegram_to_quadrant.py
-persistenceMount: /data
+  scriptName: amvera_telegram_to_quadrant.py
+  persistenceMount: /data
+  containerPort: 80
